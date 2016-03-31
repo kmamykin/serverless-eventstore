@@ -1,5 +1,5 @@
 {
-  "name": "serverless-test1",
+  "name": "serverless-eventstore",
   "version": "0.0.1",
   "description": "A Serverless Event Store",
   "author": "Kliment Mamykin<kmamyk@gmail.com>",
@@ -9,5 +9,12 @@
     "type": "git",
     "url": "git://github.com/"
   },
-  "dependencies": {}
+  "scripts": {
+    "codeship": "serverless dash summary",
+    "deploy:resources": ""
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "serverless": "^0.5.1"
+  }
 }
