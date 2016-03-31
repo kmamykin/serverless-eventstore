@@ -10,6 +10,7 @@
     "url": "git://github.com/"
   },
   "scripts": {
+    "test": "echo PASSED!",
     "codeship": "serverless dash summary",
     "deploy:resources": ""
   },
