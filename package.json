@@ -1,8 +1,8 @@
 {
   "name": "serverless-test1",
   "version": "0.0.1",
-  "description": "A Serverless Project and its Serverless Plugin dependencies.",
-  "author": "me",
+  "description": "A Serverless Event Store",
+  "author": "Kliment Mamykin<kmamyk@gmail.com>",
   "license": "MIT",
   "private": false,
   "repository": {
