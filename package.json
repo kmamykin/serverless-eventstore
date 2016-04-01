@@ -10,7 +10,6 @@
     "url": "git://github.com/"
   },
   "scripts": {
-    "deploy:init": "serverless project init --debug -s $STAGE -r $REGION -p $AWS_PROFILE",
     "deploy": "npm run deploy:resources && npm run deploy:functions && npm run deploy:endpoints",
     "deploy:resources": "serverless resources deploy --debug -s $STAGE -r $REGION",
     "deploy:functions": "serverless function deploy --debug -s $STAGE -r $REGION -a",
