@@ -1,0 +1,6 @@
+{
+  "region": "us-east-1",
+  "resourcesStackName": "eventstore-master-r",
+  "iamRoleArnLambda": "arn:aws:iam::036255656832:role/eventstore-master-r-IamRoleLambda-585LQQVWDXY6",
+  "apiGatewayApi": "eventstore"
+}

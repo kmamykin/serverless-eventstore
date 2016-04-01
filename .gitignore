@@ -39,5 +39,5 @@ node_modules
 admin.env
 .env
 
-#Ignore _meta folder
-_meta
+# DO NOT ignore _meta for now as CI server can not correctly recreated _meta with project init (bug?)
+#_meta
