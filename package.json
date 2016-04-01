@@ -1,5 +1,5 @@
 {
-  "name": "serverless-eventstore",
+  "name": "eventstore",
   "version": "0.0.1",
   "description": "A Serverless Event Store",
   "author": "Kliment Mamykin<kmamyk@gmail.com>",
@@ -10,9 +10,12 @@
     "url": "git://github.com/"
   },
   "scripts": {
-    "test": "echo PASSED!",
-    "codeship": "serverless dash summary",
-    "deploy:resources": ""
+    "deploy:init": "serverless project init --debug -s $STAGE -r $REGION -p $AWS_PROFILE",
+    "deploy": "npm run deploy:resources && npm run deploy:functions && npm run deploy:endpoints",
+    "deploy:resources": "serverless resources deploy --debug -s $STAGE -r $REGION",
+    "deploy:functions": "serverless function deploy --debug -s $STAGE -r $REGION -a",
+    "deploy:endpoints": "serverless endpoint deploy --debug -s $STAGE -r $REGION",
+    "test": "echo PASSED!"
   },
   "dependencies": {},
   "devDependencies": {
