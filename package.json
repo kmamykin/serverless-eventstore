@@ -18,6 +18,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "serverless": "^0.5.1"
+    "serverless": "^0.5.1",
+    "serverless-cors-plugin": "^0.4.1"
   }
 }

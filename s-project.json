@@ -1,4 +1,7 @@
 {
   "name": "eventstore",
+  "plugins": [
+    "serverless-cors-plugin"
+  ],
   "custom": {}
 }
