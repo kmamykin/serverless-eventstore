@@ -11,9 +11,9 @@
   },
   "scripts": {
     "deploy": "npm run deploy:resources && npm run deploy:functions && npm run deploy:endpoints",
-    "deploy:resources": "serverless resources deploy --debug -s $STAGE -r $REGION",
-    "deploy:functions": "serverless function deploy --debug -s $STAGE -r $REGION -a -t",
-    "deploy:endpoints": "serverless endpoint deploy --debug -s $STAGE -r $REGION",
+    "deploy:resources": "serverless resources deploy --debug -s ${STAGE:-$USER} -r ${REGION:-us-east-1}",
+    "deploy:functions": "serverless function deploy --debug -s ${STAGE:-$USER} -r ${REGION:-us-east-1} -a -t",
+    "deploy:endpoints": "serverless endpoint deploy --debug -s ${STAGE:-$USER} -r ${REGION:-us-east-1}",
     "test": "echo PASSED!"
   },
   "dependencies": {},
