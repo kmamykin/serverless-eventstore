@@ -23,10 +23,9 @@
       "authorizationType": "none",
       "authorizerFunction": false,
       "apiKeyRequired": false,
-      "requestParameters": {},
-      "requestTemplates": {
-        "application/json": ""
+      "requestParameters": {
       },
+      "requestTemplates": "$${apiRequestTemplate}",
       "responses": {
         "400": {
           "statusCode": "400"
