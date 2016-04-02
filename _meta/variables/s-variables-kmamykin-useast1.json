@@ -1,0 +1,6 @@
+{
+  "region": "us-east-1",
+  "resourcesStackName": "eventstore-kmamykin-r",
+  "iamRoleArnLambda": "arn:aws:iam::036255656832:role/eventstore-kmamykin-r-IamRoleLambda-1L1ZJXR3AMTZ4",
+  "apiGatewayApi": "eventstore"
+}
