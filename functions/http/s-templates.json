@@ -1,0 +1,37 @@
+{
+  "apiRequestTemplates": {
+    "application/json": {
+      "stage" : "$context.stage",
+      "request_id" : "$context.requestId",
+      "api_id" : "$context.apiId",
+      "resource_path" : "$context.resourcePath",
+      "resource_id" : "$context.resourceId",
+      "http_method" : "$context.httpMethod",
+      "source_ip" : "$context.identity.sourceIp",
+      "user-agent" : "$context.identity.userAgent",
+      "account_id" : "$context.identity.accountId",
+      "api_key" : "$context.identity.apiKey",
+      "caller" : "$context.identity.caller",
+      "user" : "$context.identity.user",
+      "user_arn" : "$context.identity.userArn",
+      "body": "$input.json('$')",
+      "path-params" : "$input.params().path",
+      "query" : "$input.params().querystring",
+      "headers" : "$input.params().header",
+      "stageVars-functionAlias": "$stageVariables.functionAlias"
+    }
+  },
+  "apiResponses": {
+    "400": {
+      "statusCode": "400"
+    },
+    "default": {
+      "statusCode": "200",
+      "responseParameters": {},
+      "responseModels": {},
+      "responseTemplates": {
+        "application/json": ""
+      }
+    }
+  }
+}
